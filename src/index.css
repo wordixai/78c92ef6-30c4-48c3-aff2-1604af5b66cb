@@ -9,10 +9,46 @@ The @apply directive should not be used with the group utility class.
 
 @layer base {
   :root {
-   
+    --background: 42 21% 95%;
+    --foreground: 20 14% 15%;
+
+    --primary: 20 14% 20%;
+    --primary-foreground: 42 21% 95%;
+
+    --secondary: 35 35% 85%;
+    --secondary-foreground: 20 14% 20%;
+
+    --accent: 35 50% 75%;
+    --accent-foreground: 20 14% 20%;
+
+    --muted: 35 20% 88%;
+    --muted-foreground: 20 14% 40%;
+
+    --border: 35 20% 80%;
+    --input: 35 20% 80%;
+    --ring: 35 50% 60%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 15%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --radius: 0.5rem;
+
+    /* Polaroid colors */
+    --camera-body: 25 15% 25%;
+    --camera-accent: 185 50% 45%;
+    --photo-border: 0 0% 98%;
+    --photo-shadow: 0 0% 0%;
   }
 
   .dark {
+    --background: 20 14% 8%;
+    --foreground: 42 21% 95%;
+  }
 
+  body {
+    @apply bg-background text-foreground;
   }
 }
